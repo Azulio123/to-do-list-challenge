@@ -1,0 +1,152 @@
+body {
+    display: -ms-flexbox;
+    background:url("pics/lined-paper.jpg")
+}
+h1  {
+    font-family: 'Lilita One', cursive;
+    text-align: center;
+    margin-top: 7em;
+    font-size: 3em;
+}
+
+h2 {
+    font-family: 'Lilita One', cursive;
+    font-size: 3em;
+}
+
+label {
+    font-size: 2em;
+    font-family: 'Lilita One', cursive;
+    padding-top: 1px;
+}
+
+.list-body {
+    text-align: center;
+}
+
+input[type=text] {
+    border-radius: 3px;
+    border-color: yellow;
+    background-color: yellow;
+    background-image: url('pics/plus.jpg');
+    background-position: 5px 8.5px;
+  background-repeat: no-repeat;
+  padding-left: 40px;
+  transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:hover {
+    background-color: white;
+}
+
+input[type=text]:focus {
+    width: 25%;
+  }
+
+#form {
+    margin-left: 10px;
+    height: 35px;
+}
+
+ul {
+    margin-top: none;
+}
+li {
+    font-size: 2em;
+    color: red;
+    font-family: 'Overpass', sans-serif;
+    list-style-type: none;
+    line-height: 2;
+}
+
+#btn1 {
+border-radius: 4px;
+  background-color: #5ca1e1;
+  border: none;
+  color: #fff;
+  text-align: center;
+  font-size: 1.5em;
+  padding: 16px;
+  width: 175px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 36px;
+  box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+}
+
+#btn1{
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+#btn1:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;  
+  top: 14px;
+  right: -20px;
+  transition: 0.5s;
+}
+
+#btn1:hover{
+  padding-right: 24px;
+  padding-left:8px;
+  background-color: #117ce0;
+}
+
+#btn1:hover:after {
+  opacity: 1;
+  right: 10px;
+}
+
+
+.done {
+    text-decoration: line-through;
+}
+
+.done:before {
+    content: '✓';
+    text-decoration: none;
+}
+
+ li {
+    list-style-image:url("/default_unchecked.png");
+}
+
+ul.checkmark {
+    list-style-type: none;
+}
+/*mobile */
+@media only screen and (max-width: 700px) {
+    body {
+        background:url("pics/mobilebackground.jpg")
+    }
+
+    h1 {
+        text-align: center;
+        margin-top: 3em;
+    }
+
+    input[type=button] {
+        margin: none;
+    }
+    li{
+        margin: none;
+    }
+    input[type=text] {
+        margin-bottom:none;
+    }
+
+}
+
+/* Stupid Tablet Sizes */
+
+@media (min-width: 768px) and (max-width: 1500px){
+    h1 {
+        color: white;
+        text-shadow: 1px 1px 2px black;
+    }
+
+}
